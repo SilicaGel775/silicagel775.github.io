@@ -384,7 +384,7 @@ let xAxis = d3.axisBottom(x)
     .tickValues(d3.merge([1,2,3].map(e=>xvals.map(m=>m*Math.pow(10,e)))).concat([250,20000]))
     .tickFormat(f => f>=1000 ? (f/1000)+"k" : f);
 
-let tickPattern = [3,0,0,0,3,0,0,0,0,0,0,3,0,0,0,0,3,0,3,0,3,0,0,0,3],
+let tickPattern = [3,0,0,0,3,0,0,0,0,0,0,3,0,0,0,0,3,0,3,0,3,3,0,0,3],
     getTickType = i => i =  tickPattern[i],
     tickThickness = [2,4,4,9,15].map(t=>t/10);
 

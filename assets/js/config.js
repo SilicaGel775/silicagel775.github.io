@@ -1,5 +1,5 @@
 // Configuration options
-const init_phones = ["Haruto 2024 Target", "AudioSense DT200"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
+const init_phones = ["Harman IE 2019v2", "AudioSense DT200"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
       DIR = "data/",                                // Directory where graph files are stored
       default_channels = ["L","R"],                 // Which channels to display. Avoid javascript errors if loading just one channel per phone
       default_normalization = "dB",                 // Sets default graph normalization mode. Accepts "dB" or "Hz"
@@ -13,9 +13,9 @@ const init_phones = ["Haruto 2024 Target", "AudioSense DT200"],// Optional. Whic
       alt_tutorial = true,                          // Display a configurable frequency response guide below the graph
       site_url = '/',                               // URL of your graph "homepage"
       share_url = true,                             // If true, enables shareable URLs
-      watermark_text = "HarutoHiroki",              // Optional. Watermark appears behind graphs
-      watermark_image_url = "assets/images/haruto.svg", // Optional. If image file is in same directory as config, can be just the filename
-      page_title = "HarutoHiroki",                  // Optional. Appended to the page title if share URLs are enabled
+      watermark_text = "SilicaGel",              // Optional. Watermark appears behind graphs
+      watermark_image_url = "", // Optional. If image file is in same directory as config, can be just the filename
+      page_title = "SilicaGel",                  // Optional. Appended to the page title if share URLs are enabled
       page_description = "View and compare frequency response graphs for earphones",
       accessories = true,                           // If true, displays specified HTML at the bottom of the page. Configure further below
       externalLinksBar = true,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
@@ -36,10 +36,10 @@ const init_phones = ["Haruto 2024 Target", "AudioSense DT200"],// Optional. Whic
 
 // Specify which targets to display
 const targets = [
-    { type:"Reference",  files:["Haruto 2024","Haruto 2021"] },
+    { type:"Harman",     files:["Harman IE 2019v2","Harman IE 2017v2"] },
     { type:"Neutral",    files:["KEMAR DF","IEF Neutral 2023","Etymotic"] },
     { type:"Reviewer",   files:["Antdroid","Banbeucmas","HBB","Precogvision","Super Review 22","Timmy","VSG"] },
-    { type:"Preference", files:["Harman IE 2019v2","Harman IE 2017v2","AutoEQ","Rtings","Sonarworks"] }
+    { type:"Preference", files:["AutoEQ","Rtings","Sonarworks"] }
 ];
 
 // Haruto's Addons
@@ -57,7 +57,7 @@ const  preference_bounds_name = "Preference Bounds RAW",  // Preference bounds n
        default_treble = 0,                             // Default Custom DF treble gain value
        tiltableTargets = ["KEMAR DF"],                 // Targets that are allowed to be tilted
        compTargets = ["KEMAR DF"],                     // Targets that are allowed to be used for compensation
-       allowCreatorSupport = true;                     // Allow the creator to have a button top right to support them
+       allowCreatorSupport = false;                     // Allow the creator to have a button top right to support them
 
 // *************************************************************
 // Functions to support config options set above; probably don't need to change these
@@ -78,7 +78,7 @@ function watermark(svg) {
     
     if ( watermark_text ) {
         wm.append("text")
-            .attrs({id:'wtext', x:0, y:80, "font-size":28, "text-anchor":"middle", "class":"graph-name"})
+            .attrs({id:'wtext', x:0, y:20, "font-size":28, "text-anchor":"middle", "class":"graph-name"})
             .text(watermark_text);
     }
 
@@ -87,7 +87,7 @@ function watermark(svg) {
         .attr("opacity",0.2)
         .append("text")
         .attrs({x:765, y:314, "font-size":10, "text-anchor":"end", "class":"site_name"})
-        .text("graphtool.harutohiroki.com");
+        .text("silicagel775.github.io");
 }
 
 
@@ -131,7 +131,11 @@ setLayout();
 const 
     // Short text, center-aligned, useful for a little side info, credits, links to measurement setup, etc. 
     simpleAbout = `
-        <p class="center">This graph database is maintained by HarutoHiroki with frequency responses generated via an "IEC60318-4"-compliant ear simulator. This web software is based on a heavily modified version of the <a href="https://github.com/mlochbaum/CrinGraph">CrinGraph</a> open source software project, with <a href="https://www.teachmeaudio.com/mixing/techniques/audio-spectrum">Audio Spectrum</a>'s definition source.</p>
+        <p class="center">
+            This graph database is maintained by SilicaGel. All measurements are done using 'IEC 60318-4' compliant ear simulator.
+            This web software is based on a <a href="https://github.com/HarutoHiroki/PublicGraphTool">HarutoHiroki's modified version of CrinGraph</a>,
+            which was <a href="https://github.com/mlochbaum/CrinGraph">originally developed by Marshall Lochbaum</a>
+        </p>
     `,
     // Which of the above variables to actually insert into the page
     whichAccessoriesToUse = simpleAbout;
@@ -222,25 +226,33 @@ setupGraphAnalytics();
 
 
 // If alt_header is enabled, these are the items added to the header
-let headerLogoText = "HarutoHiroki",
-    headerLogoImgUrl = "assets/images/haruto.svg",
+let headerLogoText = "SilicaGelGraphTool",
+    headerLogoImgUrl = "",
     headerLinks = [
     {
-        name: "Home",
-        url: "https://harutohiroki.com"
+        name: "Blog",
+        url: "https://blog.naver.com/fishnchips775"
     },
     {
-        name: "Ranking",
-        url: "https://docs.google.com/spreadsheets/d/1DZTac1BxCLdmS2J4DDQyvKSVUZGnNhz2r86qMGcs_Jo/edit?pli=1#gid=330037169"
+        name: "Head-Fi",
+        url: "https://www.head-fi.org/search/29911226/?c[users]=SilicaGel&o=date"
     },
     {
-        name: "Discord",
-        url: "https://discord.harutohiroki.com"
+        name: "Twitter",
+        url: "https://x.com/_silicagel"
     },
-    {
-        name: "Donate",
-        url: "https://ko-fi.com/harutohiroki"
-    },
+//  {
+//      name: "Ranking",
+//      url: "https://docs.google.com/spreadsheets/d/1DZTac1BxCLdmS2J4DDQyvKSVUZGnNhz2r86qMGcs_Jo/edit?pli=1#gid=330037169"
+//  },
+//  {
+//      name: "Discord",
+//      url: "https://discord.harutohiroki.com"
+//  },
+//  {
+//      name: "Donate",
+//      url: "https://ko-fi.com/harutohiroki"
+//  },
 //  {
 //      name: "GitHub",
 //      url: "https://github.com/HarutoHiroki"

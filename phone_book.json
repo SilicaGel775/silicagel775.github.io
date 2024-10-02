@@ -1,10 +1,953 @@
 [
   {
-    "name": "AudioSense",
+    "name": "_DIY",
     "phones": [
       {
-        "name": "DT200",
-        "file": "AudioSense DT200"
+        "name": "IE600",
+        "file": "_DIY IE600"
+      },
+      {
+        "name": "IE900",
+        "file": "_DIY IE900"
+      },
+      {
+        "name": "Trifecta",
+        "file": [
+          "_DIY Trifecta (Black Tip)",
+          "_DIY Trifecta (White Tip)",
+          "_DIY Trifecta (COREIR Brass Tip)"
+        ],
+        "prefix": "_DIY Trifecta"
+      },
+      {
+        "name": "Xelento",
+        "file": "_DIY Xelento"
+      }
+    ]
+  },
+  {
+    "name": "1More",
+    "phones": [
+      {
+        "name": "E1001 Triple Driver",
+        "file": "1More E1001 Triple Driver"
+      }
+    ]
+  },
+  {
+    "name": "64Audio",
+    "phones": [
+      {
+        "name": "U12t",
+        "file": [
+          "64Audio U12t (M20 Filter, Divinus Velvet Tips)"
+        ],
+        "prefix": "64Audio U12t"
+      }
+    ]
+  },
+  {
+    "name": "7Hz",
+    "phones": [
+      {
+        "name": "Aero",
+        "file": "7Hz Aero"
+      },
+      {
+        "name": "FIVE",
+        "file": [
+          "7Hz FIVE (H07 Tip)",
+          "7Hz FIVE (Red Tip)"
+        ],
+        "prefix": "7Hz FIVE"
+      }
+    ]
+  },
+  {
+    "name": "AFUL",
+    "phones": [
+      {
+        "name": "Cantor",
+        "file": [
+          "AFUL Cantor (Shallow Fit)"
+        ],
+        "prefix": "AFUL Cantor"
+      },
+      {
+        "name": "Explorer",
+        "file": "AFUL Explorer"
+      },
+      {
+        "name": "MagicOne",
+        "file": [
+          "AFUL MagicOne (Black Tip)",
+          "AFUL MagicOne (White Tip)"
+        ],
+        "prefix": "AFUL MagicOne"
+      }
+    ]
+  },
+  {
+    "name": "ag",
+    "phones": [
+      {
+        "name": "Cotsubu ASMR 3D",
+        "file": "ag Cotsubu ASMR 3D"
+      },
+      {
+        "name": "Cotsubu ASMR Mk2",
+        "file": "ag Cotsubu ASMR Mk2"
+      }
+    ]
+  },
+  {
+    "name": "AKG",
+    "phones": [
+      {
+        "name": "N5005",
+        "file": [
+          "AKG N5005 (SN 767XX, Reference Filter)",
+          "AKG N5005 (SN 767XX, Bass Boost Filter)",
+          "AKG N5005 (SN 767XX, Mid High Filter)",
+          "AKG N5005 (SN 767XX, High Boost Filter)",
+          "AKG N5005 (SN 814XX, Reference Filter)"
+        ],
+        "prefix": "AKG N5005"
+      }
+    ]
+  },
+  {
+    "name": "Alpex",
+    "phones": [
+      {
+        "name": "HSE-A5000PN-F",
+        "file": "Alpex HSE-A5000PN-F"
+      }
+    ]
+  },
+  {
+    "name": "AME",
+    "phones": [
+      {
+        "name": "T71 IEM",
+        "file": [
+          "AME T71 IEM (EQ Flat, CP100+ Tip)",
+          "AME T71 IEM (EQ Flat, Foamax Tip)",
+          "AME T71 IEM (EQ AME 1, CP100+ Tip)",
+          "AME T71 IEM (EQ AME 2, CP100+ Tip)",
+          "AME T71 IEM (EQ Flat, DD Only)",
+          "AME T71 IEM (EQ Flat, BA1 Only)",
+          "AME T71 IEM (EQ Flat, BA2 Only)",
+          "AME T71 IEM (EQ Flat, BA3 Only)"
+        ],
+        "prefix": "AME T71 IEM"
+      }
+    ]
+  },
+  {
+    "name": "Apple",
+    "phones": [
+      {
+        "name": "AirPods Pro 2",
+        "file": "Apple AirPods Pro 2"
+      }
+    ]
+  },
+  {
+    "name": "Artio",
+    "phones": [
+      {
+        "name": "CR-V1",
+        "file": [
+          "Artio CR-V1 (L Signal)",
+          "Artio CR-V1 (R Signal)",
+          "Artio CR-V1 (L+R Signal)"
+        ],
+        "prefix": "Artio CR-V1"
+      }
+    ]
+  },
+  {
+    "name": "Audio-Technica",
+    "phones": [
+      {
+        "name": "ATH-CKS30TW+",
+        "file": [
+          "Audio-Technica ATH-CKS30TW+",
+          "Audio-Technica ATH-CKS30TW+ (ANC On)",
+          "Audio-Technica ATH-CKS30TW+ (EQ Bass Beat Mild)",
+          "Audio-Technica ATH-CKS30TW+ (EQ Bass Beat Default)",
+          "Audio-Technica ATH-CKS30TW+ (EQ Bass Beat Strong)",
+          "Audio-Technica ATH-CKS30TW+ (EQ Bass Deep Mild)",
+          "Audio-Technica ATH-CKS30TW+ (EQ Bass Deep Default)",
+          "Audio-Technica ATH-CKS30TW+ (EQ Bass Deep Strong)",
+          "Audio-Technica ATH-CKS30TW+ (EQ Clear Mild)",
+          "Audio-Technica ATH-CKS30TW+ (EQ Clear Default)",
+          "Audio-Technica ATH-CKS30TW+ (EQ Clear Strong)",
+          "Audio-Technica ATH-CKS30TW+ (EQ Dynamic Mild)",
+          "Audio-Technica ATH-CKS30TW+ (EQ Dynamic Default)",
+          "Audio-Technica ATH-CKS30TW+ (EQ Dynamic Strong)",
+          "Audio-Technica ATH-CKS30TW+ (EQ Vocal Mild)",
+          "Audio-Technica ATH-CKS30TW+ (EQ Vocal Default)",
+          "Audio-Technica ATH-CKS30TW+ (EQ Vocal Strong)"
+        ],
+        "prefix": "Audio-Technica ATH-CKS30TW+"
+      }
+    ]
+  },
+  {
+    "name": "Binary Acoustics",
+    "phones": [
+      {
+        "name": "DynaQuattro",
+        "file": "Binary Acoustics DynaQuattro"
+      }
+    ]
+  },
+  {
+    "name": "CVJ",
+    "phones": [
+      {
+        "name": "x KAEI KUMO",
+        "file": [
+          "CVJ x KAEI KUMO (0000)",
+          "CVJ x KAEI KUMO (0001)",
+          "CVJ x KAEI KUMO (0010)",
+          "CVJ x KAEI KUMO (0011)",
+          "CVJ x KAEI KUMO (0100)",
+          "CVJ x KAEI KUMO (0101)",
+          "CVJ x KAEI KUMO (0110)",
+          "CVJ x KAEI KUMO (0111)",
+          "CVJ x KAEI KUMO (1000)",
+          "CVJ x KAEI KUMO (1001)",
+          "CVJ x KAEI KUMO (1010)",
+          "CVJ x KAEI KUMO (1011)",
+          "CVJ x KAEI KUMO (1100)",
+          "CVJ x KAEI KUMO (1101)",
+          "CVJ x KAEI KUMO (1110)",
+          "CVJ x KAEI KUMO (1111)"
+        ],
+        "prefix": "CVJ x KAEI KUMO"
+      }
+    ]
+  },
+  {
+    "name": "Denon",
+    "phones": [
+      {
+        "name": "PerL Pro",
+        "file": [
+          "Denon PerL Pro (Default Sound, Immersion 0)",
+          "Denon PerL Pro (Default Sound, Immersion +1)",
+          "Denon PerL Pro (Default Sound, Immersion +2)",
+          "Denon PerL Pro (Default Sound, Immersion +3)",
+          "Denon PerL Pro (Default Sound, Immersion -1)",
+          "Denon PerL Pro (Default Sound, Immersion -2)",
+          "Denon PerL Pro (Default Sound, Immersion -3)"
+        ],
+        "prefix": "Denon PerL Pro"
+      }
+    ]
+  },
+  {
+    "name": "DUNU",
+    "phones": [
+      {
+        "name": "x GizAudio DaVinci",
+        "file": [
+          "DUNU DaVinci",
+          "DUNU DaVinci (DUNU Candy Tip)",
+          "DUNU DaVinci (DUNU S&S Tip)"
+        ],
+        "prefix": "DUNU x GizAudio DaVinci"
+      },
+      {
+        "name": "Titan S2",
+        "file": [
+          "DUNU Titan S2",
+          "DUNU Titan S2 (Gray Tip)",
+          "DUNU Titan S2 (Candy Tip)",
+          "DUNU Titan S2 (S&S Tip)"
+        ],
+        "prefix": "DUNU Titan S2"
+      }
+    ]
+  },
+  {
+    "name": "Earbridge",
+    "phones": [
+      {
+        "name": "HPSD E70",
+        "file": [
+          "Earbridge HPSD E70 (Gold DD, Black Housing)",
+          "Earbridge HPSD E70 (Gold DD, Blue Housing)",
+          "Earbridge HPSD E70 (Gold DD, Red Housing)",
+          "Earbridge HPSD E70 (Silver DD, Black Housing)",
+          "Earbridge HPSD E70 (Silver DD, Blue Housing)",
+          "Earbridge HPSD E70 (Silver DD, Red Housing)"
+        ],
+        "prefix": "Earbridge HPSD E70"
+      }
+    ]
+  },
+  {
+    "name": "Earfun",
+    "phones": [
+      {
+        "name": "Free Pro 3",
+        "file": [
+          "Earfun Free Pro 3 (ANC On)",
+          "Earfun Free Pro 3 (ANC Off)",
+          "Earfun Free Pro 3 (ANC On, Bass Boost)",
+          "Earfun Free Pro 3 (ANC On, Bass Reducer)",
+          "Earfun Free Pro 3 (ANC On, Classical)",
+          "Earfun Free Pro 3 (ANC On, Country)",
+          "Earfun Free Pro 3 (ANC On, Jazz)",
+          "Earfun Free Pro 3 (ANC On, Pop)",
+          "Earfun Free Pro 3 (ANC On, RnB)",
+          "Earfun Free Pro 3 (ANC On, Rock)",
+          "Earfun Free Pro 3 (ANC On, Treble Boost)",
+          "Earfun Free Pro 3 (ANC On, Treble Reducer)",
+          "Earfun Free Pro 3 (ANC On, Oluv Signature Natural)",
+          "Earfun Free Pro 3 (ANC On, Oluv Signature Boosted)"
+        ],
+        "prefix": "Earfun Free Pro 3"
+      }
+    ]
+  },
+  {
+    "name": "Elysian Acoustic Labs",
+    "phones": [
+      {
+        "name": "Pilgrim",
+        "file": "Elysian Acoustic Labs Pilgrim"
+      }
+    ]
+  },
+  {
+    "name": "EPZ",
+    "phones": [
+      {
+        "name": "320",
+        "file": ["EPZ 320 (AZLA Sedna MAX tip)"],
+        "prefix": "EPZ 320"
+      }
+    ]
+  },
+  {
+    "name": "FIIL",
+    "phones": [
+      {
+        "name": "CC Pro 2",
+        "file": [
+          "FIIL CC Pro 2 (ANC On)",
+          "FIIL CC Pro 2 (ANC Off)",
+          "FIIL CC Pro 2 (Open Mode)",
+          "FIIL CC Pro 2 (Monitor Mode)",
+          "FIIL CC Pro 2 (Windy Mode)",
+          "FIIL CC Pro 2 (EQ Bass)",
+          "FIIL CC Pro 2 (EQ Treble)",
+          "FIIL CC Pro 2 (EQ Car Stereo)",
+          "FIIL CC Pro 2 (EQ Classic)",
+          "FIIL CC Pro 2 (EQ Dance)",
+          "FIIL CC Pro 2 (EQ Electronic)",
+          "FIIL CC Pro 2 (EQ Home Audio)",
+          "FIIL CC Pro 2 (EQ Light Music)",
+          "FIIL CC Pro 2 (EQ Metal)",
+          "FIIL CC Pro 2 (EQ New Age)",
+          "FIIL CC Pro 2 (EQ Pop)",
+          "FIIL CC Pro 2 (EQ RnB)",
+          "FIIL CC Pro 2 (EQ Rock)",
+          "FIIL CC Pro 2 (EQ Soft Bass)",
+          "FIIL CC Pro 2 (EQ Treble)",
+          "FIIL CC Pro 2 (Custom EQ Flat)"
+        ],
+        "prefix": "FIIL CC Pro 2"
+      }
+    ]
+  },
+  {
+    "name": "FiiO",
+    "phones": [
+      {
+        "name": "FX15",
+        "file": [
+          "FiiO FX15 (Switch On)",
+          "FiiO FX15 (Switch Off)"
+        ],
+        "prefix": "FiiO FX15"
+      }
+    ]
+  },
+  {
+    "name": "Final",
+    "phones": [
+      {
+        "name": "B1",
+        "file": "Final B1"
+      },
+      {
+        "name": "E500",
+        "file": "Final E500"
+      },
+      {
+        "name": "ZE8000",
+        "file": ["Final ZE8000 (Firmware 1.8.5)"]
+      },
+      {
+        "name": "ZE8000 MK2",
+        "file": ["Final ZE8000 MK2 (Firmware 1.0.1)"]
+      }
+    ]
+  },
+  {
+    "name": "HeartField",
+    "phones": [
+      {
+        "name": "Blanc",
+        "file": "HeartField Blanc"
+      }
+    ]
+  },
+  {
+    "name": "Hiby",
+    "phones": [
+      {
+        "name": "Hela",
+        "file": "Hiby Hela"
+      }
+    ]
+  },
+  {
+    "name": "Hidition",
+    "phones": [
+      {
+        "name": "T100",
+        "file": [
+          "Hidition T100 (Pre-installed Tip)",
+          "Hidition T100 (Gray Tip)",
+          "Hidition T100 (White Tip)"
+        ],
+        "prefix": "Hidition T100"
+      }
+    ]
+  },
+  {
+    "name": "Hidizs",
+    "phones": [
+      {
+        "name": "MS3",
+        "file": "Hidizs MS3"
+      },
+      {
+        "name": "MS5",
+        "file": "Hidizs MS5"
+      }
+    ]
+  },
+  {
+    "name": "ivipQ",
+    "phones": [
+      {
+        "name": "Conch V12",
+        "file": [
+          "ivipQ Conch V12",
+          "ivipQ Conch V12 (10ohm Resistor)"
+        ],
+        "prefix": "ivipQ Conch V12"
+      }
+    ]
+  },
+  {
+    "name": "Juzear",
+    "phones": [
+      {
+        "name": "61T Butterfly",
+        "file": [
+          "Juzear 61T Butterfly",
+          "Juzear 61T Butterfly (Neon Tip)",
+          "Juzear 61T Butterfly (Foam Tip)"
+        ],
+        "prefix": "Juzear 61T Butterfly"
+      }
+    ]
+  },
+  {
+    "name": "K-Array",
+    "phones": [
+      {
+        "name": "Duetto",
+        "file": [
+          "K-Array Duetto",
+          "K-Array Duetto (Deep Insertion)",
+          "K-Array Duetto (Foam Tip)"
+        ],
+        "prefix": "K-Array Duetto"
+      }
+    ]
+  },
+  {
+    "name": "Kefine",
+    "phones": [
+      {
+        "name": "Delci",
+        "file": [
+          "Kefine Delci (Narrow Bore Tip)",
+          "Kefine Delci (Wide Bore Tip)"
+        ],
+        "prefix": "Kefine Delci"
+      }
+    ]
+  },
+  {
+    "name": "Kinera Celest",
+    "phones": [
+      {
+        "name": "Pandamon 2.0",
+        "file": [
+          "Kinera Celest Pandamon 2.0 (Grey Tip)",
+          "Kinera Celest Pandamon 2.0 (Red Tip)"
+        ],
+        "prefix": "Kinera Celest Pandamon 2.0"
+      },
+      {
+        "name": "Plutus Beast",
+        "file": [
+          "Kinera Celest Plutus Beast (Grey Tip)",
+          "Kinera Celest Plutus Beast (Grey Tip, Shallow Insertion)",
+          "Kinera Celest Plutus Beast (Grey Tip, Deep Insertion)",
+          "Kinera Celest Plutus Beast (Red Tip)"
+        ],
+        "prefix": "Kinera Celest Plutus Beast"
+      },
+      {
+        "name": "Wyvern Abyss",
+        "file": "Kinera Celest Wyvern Abyss"
+      }
+    ]
+  },
+  {
+    "name": "Kiwi Ears",
+    "phones": [
+      {
+        "name": "Canta",
+        "file": "Kiwi Ears Canta"
+      },
+      {
+        "name": "Dolce",
+        "file": "Kiwi Ears Dolce"
+      },
+      {
+        "name": "KE4",
+        "file": "Kiwi Ears KE4"
+      },
+      {
+        "name": "Singolo",
+        "file": [
+          "Kiwi Ears Singolo (Black Tip)",
+          "Kiwi Ears Singolo (White Tip)"
+        ],
+        "prefix": "Kiwi Ears Singolo"
+      },
+      {
+        "name": "Orchestra Lite",
+        "file": "Kiwi Ears Orchestra Lite"
+      }
+    ]
+  },
+  {
+    "name": "KZ",
+    "phones": [
+      {
+        "name": "AS10 Pro",
+        "file": [
+          "KZ AS10 Pro",
+          "KZ AS10 Pro (Foam Tip)"
+        ],
+        "prefix": "KZ AS10 Pro"
+      },
+      {
+        "name": "ZS10 Pro 2",
+        "file": [
+          "KZ ZS10 Pro 2 (Silicone Tip, 0000)",
+          "KZ ZS10 Pro 2 (Silicone Tip, 0001)",
+          "KZ ZS10 Pro 2 (Silicone Tip, 0010)",
+          "KZ ZS10 Pro 2 (Silicone Tip, 0100)",
+          "KZ ZS10 Pro 2 (Silicone Tip, 1000)",
+          "KZ ZS10 Pro 2 (Silicone Tip, 1100)",
+          "KZ ZS10 Pro 2 (Silicone Tip, 1110)",
+          "KZ ZS10 Pro 2 (Foam Tip, 0000)",
+          "KZ ZS10 Pro 2 (Foam Tip, 0001)",
+          "KZ ZS10 Pro 2 (Foam Tip, 0010)",
+          "KZ ZS10 Pro 2 (Foam Tip, 0100)",
+          "KZ ZS10 Pro 2 (Foam Tip, 1000)",
+          "KZ ZS10 Pro 2 (Foam Tip, 1100)",
+          "KZ ZS10 Pro 2 (Foam Tip, 1110)"
+        ],
+        "prefix": "KZ ZS10 Pro 2"
+      }
+    ]
+  },
+  {
+    "name": "Moondrop",
+    "phones": [
+      {
+        "name": "A8",
+        "file": "Moondrop A8"
+      }
+    ]
+  },
+  {
+    "name": "NF Audio",
+    "phones": [
+      {
+        "name": "RA15",
+        "file": [
+          "NF Audio RA15 (Gold Nozzle)",
+          "NF Audio RA15 (Silver Nozzle)"
+        ],
+        "prefix": "NF Audio RA15"
+      }
+    ]
+  },
+  {
+    "name": "NiceHCK",
+    "phones": [
+      {
+        "name": "DB2",
+        "file": [
+          "NiceHCK DB2 (Gray Tip)",
+          "NiceHCK DB2 (NiceHCK 07 Tip)"
+        ],
+        "prefix": "NiceHCK DB2"
+      },
+      {
+        "name": "YD520",
+        "file": "NiceHCK YD520"
+      }
+    ]
+  },
+  {
+    "name": "Oriolus",
+    "phones": [
+      {
+        "name": "MK2",
+        "file": "Oriolus MK2"
+      }
+    ]
+  },
+  {
+    "name": "Philips",
+    "phones": [
+      {
+        "name": "TAT3508",
+        "file": [
+          "Philips TAT3508",
+          "Philips TAT3508 (EQ Bass)",
+          "Philips TAT3508 (EQ Treble)",
+          "Philips TAT3508 (EQ Powerful)",
+          "Philips TAT3508 (EQ Voice)",
+          "Philips TAT3508 (EQ Custom Flat)"
+        ],
+        "prefix": "Philips TAT3508"
+      }
+    ]
+  },
+  {
+    "name": "Project Refine",
+    "phones": [
+      {
+        "name": "T18R",
+        "file": [
+          "Project Refine T18R (EQ Original)",
+          "Project Refine T18R (EQ Reference)",
+          "Project Refine T18R (EQ Signature)",
+          "Project Refine T18R (EQ Neutral)",
+          "Project Refine T18R (EQ Dynamic)"
+        ],
+        "prefix": "Project Refine T18R"
+      }
+    ]
+  },
+  {
+    "name": "Pula",
+    "phones": [
+      {
+        "name": "PA02",
+        "file": "Pula PA02"
+      }
+    ]
+  },
+  {
+    "name": "QKZ",
+    "phones": [
+      {
+        "name": "ZX1",
+        "file": "QKZ ZX1"
+      }
+    ]
+  },
+  {
+    "name": "Samsung",
+    "phones": [
+      {
+        "name": "SHE-D30SV",
+        "file": "Samsung SHE-D30SV (AZLA MAX Tips)"
+      },
+      {
+        "name": "Galaxy Buds3 Pro",
+        "file": "Samsung Galaxy Buds3 Pro (ANC Off)"
+      }
+    ]
+  },
+  {
+    "name": "SeeAudio",
+    "phones": [
+      {
+        "name": "Yume Ultra",
+        "file": "SeeAudio Yume Ultra"
+      }
+    ]
+  },
+  {
+    "name": "Sennheiser",
+    "phones": [
+      {
+        "name": "Momentum True Wireless 4",
+        "file": [
+          "Sennheiser Momentum True Wireless 4 (ANC On, v5.1.4)",
+          "Sennheiser Momentum True Wireless 4 (ANC Off, v5.1.4)",
+          "Sennheiser Momentum True Wireless 4 (Default + Bass Boost, ANC On, v5.1.4)",
+          "Sennheiser Momentum True Wireless 4 (Podcast, ANC On, v5.1.4)",
+          "Sennheiser Momentum True Wireless 4 (EQ Classic, ANC On, v5.1.4)",
+          "Sennheiser Momentum True Wireless 4 (EQ Dance, ANC On, v5.1.4)",
+          "Sennheiser Momentum True Wireless 4 (EQ Hiphop, ANC On, v5.1.4)",
+          "Sennheiser Momentum True Wireless 4 (EQ Jazz, ANC On, v5.1.4)",
+          "Sennheiser Momentum True Wireless 4 (EQ Movie, ANC On, v5.1.4)",
+          "Sennheiser Momentum True Wireless 4 (EQ Pop, ANC On, v5.1.4)",
+          "Sennheiser Momentum True Wireless 4 (EQ Rock, ANC On, v5.1.4)"
+        ],
+        "prefix": "Sennheiser Momentum True Wireless 4"
+      }
+    ]
+  },
+  {
+    "name": "SIVGA",
+    "phones": [
+      {
+        "name": "Que",
+        "file": "SIVGA Que"
+      }
+    ]
+  },
+  {
+    "name": "Softears",
+    "phones": [
+      {
+        "name": "Volume",
+        "file": "Softears Volume"
+      }
+    ]
+  },
+  {
+    "name": "Sonicast",
+    "phones": [
+      {
+        "name": "Dirac",
+        "file": "Sonicast Dirac"
+      },
+      {
+        "name": "Dirac+ Mk2",
+        "file": "Sonicast Dirac+ mk2"
+      },
+      {
+        "name": "Dirac HT1",
+        "file": "Sonicast Dirac HT1"
+      },
+      {
+        "name": "Direm E3",
+        "file": "Sonicast Direm E3"
+      },
+      {
+        "name": "Direm KASA",
+        "file": "Sonicast Direm KASA"
+      },
+      {
+        "name": "Direm Pro SL",
+        "file": "Sonicast Direm Pro SL"
+      },
+      {
+        "name": "Direm W1",
+        "file": "Sonicast Direm W1"
+      }
+    ]
+  },
+  {
+    "name": "Sony",
+    "phones": [
+      {
+        "name": "IER-Z1R",
+        "file": ["Sony IER-Z1R (Divinus Velvet Tips)"],
+        "prefix": "Sony IER-Z1R"
+      },
+      {
+        "name": "MDR EX800ST",
+        "file": "Sony MDR EX800ST"
+      }
+    ]
+  },
+  {
+    "name": "Tanchjim",
+    "phones": [
+      {
+        "name": "4U",
+        "file": [
+          "Tanchjim 4U (Narrow Tip, Forward - Monitoring)",
+          "Tanchjim 4U (Narrow Tip, Up - Natural)",
+          "Tanchjim 4U (Narrow Tip, Backward - Pop)",
+          "Tanchjim 4U (Narrow Tip, Down - Atmosphere)",
+          "Tanchjim 4U (Wide Tip, Forward - Monitoring)",
+          "Tanchjim 4U (Wide Tip, Up - Natural)",
+          "Tanchjim 4U (Wide Tip, Backward - Pop)",
+          "Tanchjim 4U (Wide Tip, Down - Atmosphere)"
+        ],
+        "prefix": "Tanchjim 4U"
+      }
+    ]
+  },
+  {
+    "name": "Tangzu",
+    "phones": [
+      {
+        "name": "x Divinus FUDU",
+        "file": [
+          "Tangzu FUDU (Preinstalled Tip)",
+          "Tangzu FUDU (Tang Sancai Tip)",
+          "Tangzu FUDU (Velvet Tip)"
+        ],
+        "prefix": "Tangzu FUDU"
+      }
+    ]
+  },
+  {
+    "name": "Toocki",
+    "phones": [
+      {
+        "name": "YL04 (TQ-XA96)",
+        "file": "Toocki YL04 TQ-XA96"
+      }
+    ]
+  },
+  {
+    "name": "Truthear",
+    "phones": [
+      {
+        "name": "HEXA",
+        "file": [
+          "Truthear HEXA (Narrow Tip)",
+          "Truthear HEXA (Wide Tip)"
+        ],
+        "prefix": "Truthear HEXA"
+      },
+      {
+        "name": "Zero:Red",
+        "file": [
+          "Truthear ZeroRed",
+          "Truthear ZeroRed (10ohm Resistor)"
+        ],
+        "prefix": "Truthear ZeroRed"
+      }
+    ]
+  },
+  {
+    "name": "Ucotech",
+    "phones": [
+      {
+        "name": "IL300",
+        "file": "Ucotech IL300"
+      },
+      {
+        "name": "RE-1 Pro",
+        "file": "Ucotech RE-1 Pro"
+      },
+      {
+        "name": "RE-3",
+        "file": [
+          "Ucotech RE-3 (Ucofit Tip)",
+          "Ucotech RE-3 (Tang Sancai Tip)",
+          "Ucotech RE-3 (AZLA Foamax Tip)"
+        ],
+        "prefix": "Ucotech RE-3"
+      }
+    ]
+  },
+  {
+    "name": "Ultimate Ears",
+    "phones": [
+      {
+        "name": "UE600vi",
+        "file": "Ultimate Ears UE600vi"
+      }
+    ]
+  },
+  {
+    "name": "Wavelet Design",
+    "phones": [
+      {
+        "name": "OPUS 1S",
+        "file": "Wavelet Design OPUS 1S"
+      }
+    ]
+  },
+  {
+    "name": "Yanyin",
+    "phones": [
+      {
+        "name": "Moonlight",
+        "file": "Yanyin Moonlight"
+      }
+    ]
+  },
+  {
+    "name": "ZiiGaat",
+    "phones": [
+      {
+        "name": "Arete",
+        "file": [
+          "ZiiGaat Arete",
+          "ZiiGaat Arete (Foam Tip)"
+        ],
+        "prefix": "ZiiGaat Arete"
+      },
+      {
+        "name": "Cinno",
+        "file": "ZiiGaat Cinno"
+      },
+      {
+        "name": "ESTRELLA",
+        "file": [
+          "ZiiGaat ESTRELLA",
+          "ZiiGaat ESTRELLA (Foam Tip)"
+        ],
+        "prefix": "ZiiGaat ESTRELLA"
+      },
+      {
+        "name": "Nuo",
+        "file": "ZiiGaat Nuo"
+      }
+    ]
+  },
+  {
+    "name": "Zhewu Yusheng",
+    "phones": [
+      {
+        "name": "Trinity",
+        "file": [
+          "Zhewu Yusheng Trinity (Black Tip)",
+          "Zhewu Yusheng Trinity (White Tip)",
+          "Zhewu Yusheng Trinity (COREIR Brass Tip)"
+        ],
+        "prefix": "Zhewu Yusheng Trinity"
       }
     ]
   }
