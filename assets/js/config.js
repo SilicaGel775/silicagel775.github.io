@@ -60,7 +60,10 @@ const  preference_bounds_name = "Preference Bounds RAW",  // Preference bounds n
        allowCreatorSupport = true;                     // Allow the creator to have a button top right to support them
        allowLanguageSelector = true;                   // Allow the creator to have a button top right to support them
        availableLanguages = ["en", "ko"];              // List of available language codes
-       defaultLanguage = "en";                         // Default language code
+       defaultLanguage = (function() {
+            const browserLang = navigator.language.split('-')[0];
+            return availableLanguages.includes(browserLang) ? browserLang : "en";
+       })();                                           // Determine default language based on user's browser
        prioritizeTranslatedHeader = true;              // If true, prioritize translated header link from language files over config.js
        prioritizeTranslatedTutorial = true;            // If true, prioritize translated tutorial from language files over config.js
        prioritizeTranslatedAccessories = true;         // If true, prioritize translated accessories from language files over config.js
@@ -69,6 +72,7 @@ const  preference_bounds_name = "Preference Bounds RAW",  // Preference bounds n
 // Functions to support config options set above; probably don't need to change these
 // *************************************************************
 
+console.log(defaultLanguage);
 // But I will anyways haha - Haruto
 
 // Set up the watermark, based on config options above
