@@ -44,6 +44,8 @@ function updatePageTranslations() {
   if (prioritizeTranslatedAccessories) {
     updateAccessoriesContent();
   }
+  // Update watermark text
+  updateWatermarkText();
 }
 
 // Initialize language system
@@ -267,4 +269,10 @@ function updateAccessoriesContent() {
   const t = translations.accessories || {}; // Use empty object as fallback
 
   doc.select(".accessories aside").html(t.content || simpleAbout);
+}
+
+function updateWatermarkText() {
+  const t = translations.watermarkText || {}; // Use empty object as fallback
+
+  doc.select("#fr-graph #wtext").text(t.content || watermark_text);
 }

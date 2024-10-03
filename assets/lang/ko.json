@@ -56,6 +56,9 @@
   "accessories": {
     "content": "<p class=\"center\">해당 측정치 데이터베이스는 감자사라다가 관리하고 있습니다. 모든 주파수 응답 측정치는 'IEC 60318-4'를 준수하는 이어시뮬레이터를 통해 이루어졌습니다. This web software is based on a <a href=\"https://github.com/HarutoHiroki/PublicGraphTool\">HarutoHiroki's modified version of CrinGraph</a>, which was <a href=\"https://github.com/mlochbaum/CrinGraph\">originally developed by Marshall Lochbaum</a></p>"
   },
+  "watermarkText": {
+    "content": "Potatosalad"
+  },
   "main": {
     "pin": "고정",
     "selectBrands": "브랜드",

@@ -56,6 +56,9 @@
   "accessories": {
     "content": "<p class=\"center\">This graph database is maintained by SilicaGel. All measurements are done using 'IEC 60318-4' compliant ear simulator. This web software is based on a <a href=\"https://github.com/HarutoHiroki/PublicGraphTool\">HarutoHiroki's modified version of CrinGraph</a>, which was <a href=\"https://github.com/mlochbaum/CrinGraph\">originally developed by Marshall Lochbaum</a></p>"
   },
+  "watermarkText": {
+    "content": "SilicaGel"
+  },
   "main": {
     "pin": "PIN",
     "selectBrands": "Brands",
