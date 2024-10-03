@@ -56,8 +56,8 @@
       {
         "name": "FIVE",
         "file": [
-          "7Hz FIVE (H07 Tip)",
-          "7Hz FIVE (Red Tip)"
+          "7Hz Five (H07 Tip)",
+          "7Hz Five (Red Tip)"
         ],
         "prefix": "7Hz FIVE"
       }
@@ -148,8 +148,8 @@
     "name": "Apple",
     "phones": [
       {
-        "name": "AirPods Pro 2",
-        "file": "Apple AirPods Pro 2"
+        "name": "Airpods Pro 2",
+        "file": "Apple Airpods Pro 2"
       }
     ]
   },
@@ -405,7 +405,7 @@
     "phones": [
       {
         "name": "Blanc",
-        "file": "HeartField Blanc"
+        "file": "Heartfield Blanc"
       }
     ]
   },
@@ -424,7 +424,7 @@
       {
         "name": "T100",
         "file": [
-          "Hidition T100 (Pre-installed Tip)",
+          "Hidition T100 (Pre-Installed Tip)",
           "Hidition T100 (Gray Tip)",
           "Hidition T100 (White Tip)"
         ],
