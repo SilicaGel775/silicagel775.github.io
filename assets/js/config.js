@@ -305,6 +305,12 @@ let tutorialDefinitions = [
         name: 'Brilliance',
         width: '17.4%',
         description: 'The brilliance range is composed entirely of harmonics and is responsible for sparkle and air of a sound. Over boosting in this region can accentuate hiss and cause ear fatigue.'
+    },
+    {
+        name: "Non-Confidence Interval",
+        width: "12.8%",
+        description: "The brilliance range is composed entirely of harmonics and is responsible for sparkle and air of a sound. Over boosting in this region can accentuate hiss and cause ear fatigue.",
+        position: "right"
     }
 ]
 
