@@ -86,6 +86,7 @@
     "preferenceBounds": "Preference Bounds",
     "addHelp": "(or middle/ctrl-click when selecting; or pin other IEMs)",
     "lock": "LOCK",
+    "selectModelAlert": "Select a model from the list graph its frequency response",
     "uploading": "Uploading",
     "uploadFR": "Upload FR",
     "uploadTarget": "Upload Target",

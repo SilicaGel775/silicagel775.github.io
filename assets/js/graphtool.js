@@ -92,6 +92,7 @@ doc.html(`
       <div class="manage">
         <div class="customDF">
           <span>Preference Adjustments:</span>
+          <button id="cusdf-bounds" style="margin-right: 4px">Preference Bounds</button>
           <div>
             <input type="number" inputmode="decimal" id="cusdf-tilt" value="`+ default_tilt +`" step="0.1""></input>
             <span>Tilt (dB/Oct)</span>
@@ -109,8 +110,7 @@ doc.html(`
             <span>Ear Gain (dB)</span>
           </div>
           <button id="cusdf-UnTiltTHIS" style="margin-right: 10px">Remove Adjustments</button>
-          <button id="cusdf-harmanfilters" style="margin-right: 10px">Harman Filters</button>
-          <button id="cusdf-bounds">Preference Bounds</button>
+          <button id="cusdf-harmanfilters">Harman Filters</button>
         </div>
         <table class="manageTable">
           <colgroup>

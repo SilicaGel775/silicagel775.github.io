@@ -43,7 +43,7 @@ function updatePageTranslations() {
   // Update accessories content
   if (prioritizeTranslatedAccessories) {
     updateAccessoriesContent();
-  } 
+  }
 }
 
 // Initialize language system
@@ -126,6 +126,16 @@ function updateTranslations() {
       t.addHelp || "(or middle/ctrl-click when selecting; or pin other IEMs)"
     );
   doc.select(".manageTable .addLock").text(t.lock || "LOCK");
+
+  // Tbody Alert
+  const alertText = t.selectModelAlert || "Select a model from the list below to graph its frequency response";
+  const style = document.createElement('style');
+  style.textContent = `
+    tbody.curves:empty:before {
+      content: '${alertText}';
+    }
+  `;
+  document.head.appendChild(style);
 
   // Equalizer panel
   doc.select(".extra-panel h4").text(t.uploading || "Uploading");
@@ -219,7 +229,7 @@ function updateTranslations() {
 function updateHeaderContent() {
   const t = translations.header || {}; // Use empty object as fallback
 
-  const logoTextElement = document.querySelector(".header-logo-text");
+  const logoTextElement = document.querySelector(".logo a span");
   if (logoTextElement) {
     logoTextElement.textContent = t.logoText || headerLogoText;
   }
@@ -235,16 +245,21 @@ function updateHeaderContent() {
 function updateTutorialContent() {
   const t = translations.tutorial || []; // Use empty array as fallback
 
-  const tutorialButtons = document.querySelectorAll('.tutorial-buttons .button-segment');
+  const tutorialButtons = document.querySelectorAll(
+    ".tutorial-buttons .button-segment"
+  );
   tutorialButtons.forEach((button, i) => {
     const tutorialData = t[i] || tutorialDefinitions[i];
     button.textContent = tutorialData.name || tutorialDefinitions[i].name;
   });
 
-  const tutorialDescriptions = document.querySelectorAll('.tutorial-description .description-segment p');
+  const tutorialDescriptions = document.querySelectorAll(
+    ".tutorial-description .description-segment p"
+  );
   tutorialDescriptions.forEach((description, i) => {
     const tutorialData = t[i] || tutorialDefinitions[i];
-    description.textContent = tutorialData.description || tutorialDefinitions[i].description;
+    description.textContent =
+      tutorialData.description || tutorialDefinitions[i].description;
   });
 }
 
@@ -253,4 +268,3 @@ function updateAccessoriesContent() {
 
   doc.select(".accessories aside").html(t.content || simpleAbout);
 }
-
