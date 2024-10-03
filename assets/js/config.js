@@ -1,5 +1,5 @@
 // Configuration options
-const init_phones = ["Harman IE 2019v2", "AudioSense DT200"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
+const init_phones = ["Harman IE 2019v2 Target", "AFUL Cantor (Shallow Fit)"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
       DIR = "data/",                                // Directory where graph files are stored
       default_channels = ["L","R"],                 // Which channels to display. Avoid javascript errors if loading just one channel per phone
       default_normalization = "dB",                 // Sets default graph normalization mode. Accepts "dB" or "Hz"
@@ -58,11 +58,21 @@ const  preference_bounds_name = "Preference Bounds RAW",  // Preference bounds n
        tiltableTargets = ["KEMAR DF"],                 // Targets that are allowed to be tilted
        compTargets = ["KEMAR DF"],                     // Targets that are allowed to be used for compensation
        allowCreatorSupport = false;                     // Allow the creator to have a button top right to support them
+       allowLanguageSelector = true;                   // Allow the creator to have a button top right to support them
+       availableLanguages = ["en", "ko"];              // List of available language codes
+       defaultLanguage = (function() {
+            const browserLang = navigator.language.split('-')[0];
+            return availableLanguages.includes(browserLang) ? browserLang : "en";
+       })();                                           // Determine default language based on user's browser
+       prioritizeTranslatedHeader = true;              // If true, prioritize translated header link from language files over config.js
+       prioritizeTranslatedTutorial = true;            // If true, prioritize translated tutorial from language files over config.js
+       prioritizeTranslatedAccessories = true;         // If true, prioritize translated accessories from language files over config.js
 
 // *************************************************************
 // Functions to support config options set above; probably don't need to change these
 // *************************************************************
 
+console.log(defaultLanguage);
 // But I will anyways haha - Haruto
 
 // Set up the watermark, based on config options above
@@ -136,9 +146,10 @@ const
             This web software is based on a <a href="https://github.com/HarutoHiroki/PublicGraphTool">HarutoHiroki's modified version of CrinGraph</a>,
             which was <a href="https://github.com/mlochbaum/CrinGraph">originally developed by Marshall Lochbaum</a>
         </p>
-    `,
+    `
+    ;
     // Which of the above variables to actually insert into the page
-    whichAccessoriesToUse = simpleAbout;
+let whichAccessoriesToUse = simpleAbout;
 
 
 
