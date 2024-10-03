@@ -58,6 +58,12 @@ const  preference_bounds_name = "Preference Bounds RAW",  // Preference bounds n
        tiltableTargets = ["KEMAR DF"],                 // Targets that are allowed to be tilted
        compTargets = ["KEMAR DF"],                     // Targets that are allowed to be used for compensation
        allowCreatorSupport = true;                     // Allow the creator to have a button top right to support them
+       allowLanguageSelector = true;                   // Allow the creator to have a button top right to support them
+       availableLanguages = ["en", "ko"];              // List of available language codes
+       defaultLanguage = "en";                         // Default language code
+       prioritizeTranslatedHeader = true;              // If true, prioritize translated header link from language files over config.js
+       prioritizeTranslatedTutorial = true;            // If true, prioritize translated tutorial from language files over config.js
+       prioritizeTranslatedAccessories = true;         // If true, prioritize translated accessories from language files over config.js
 
 // *************************************************************
 // Functions to support config options set above; probably don't need to change these
@@ -132,9 +138,10 @@ const
     // Short text, center-aligned, useful for a little side info, credits, links to measurement setup, etc. 
     simpleAbout = `
         <p class="center">This graph database is maintained by HarutoHiroki with frequency responses generated via an "IEC60318-4"-compliant ear simulator. This web software is based on a heavily modified version of the <a href="https://github.com/mlochbaum/CrinGraph">CrinGraph</a> open source software project, with <a href="https://www.teachmeaudio.com/mixing/techniques/audio-spectrum">Audio Spectrum</a>'s definition source.</p>
-    `,
+    `
+    ;
     // Which of the above variables to actually insert into the page
-    whichAccessoriesToUse = simpleAbout;
+let whichAccessoriesToUse = simpleAbout;
 
 
 
