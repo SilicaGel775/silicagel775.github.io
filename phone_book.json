@@ -69,7 +69,9 @@
       {
         "name": "Cantor",
         "file": [
-          "AFUL Cantor (Shallow Fit)"
+          "AFUL Cantor (Shallow Fit)",
+          "AFUL Cantor (Deep Fit)",
+          "AFUL Cantor (Medium Fit)"
         ],
         "prefix": "AFUL Cantor"
       },
@@ -826,6 +828,15 @@
           "Tangzu FUDU (Velvet Tip)"
         ],
         "prefix": "Tangzu FUDU"
+      }
+    ]
+  },
+  {
+    "name": "TinHiFi",
+    "phones": [
+      {
+        "name": "C2 2025",
+        "file": "TinHiFi C2 2025"
       }
     ]
   },
