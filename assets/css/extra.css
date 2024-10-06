@@ -307,10 +307,6 @@ div.extra-panel {
   overflow: auto;
 }
 
-div.extra-panel > div {
-  margin: 0 0 1em 0;
-}
-
 div.extra-panel h5 {
   margin: 0 0 1em 0;
   color: var(--accent-color-contrast);
@@ -513,7 +509,10 @@ div.extra-panel div.extra-upload-buttons {
 div.extra-panel h3,
 div.extra-panel h4 {
   color: var(--font-color-inputs);
-  margin-bottom: 4px;
+  margin: 18px 0 !important;
+}
+div.extra-upload h3 {
+  margin-top: 0 !important;
 }
 
 div.extra-panel div.extra-upload-buttons > button {
@@ -552,6 +551,9 @@ div.extra-panel div.auto-eq-button > button {
 div.extra-panel div.exports > button {
   width: 100%;
   padding: 0.9em;
+}
+div.extra-panel div.exports > button:last-child {
+  margin-bottom: 1.3em !important;
 }
 
 div.extra-eq-overlay {

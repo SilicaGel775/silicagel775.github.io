@@ -164,7 +164,7 @@ doc.html(`
 
           <div class="extra-panel" style="display: none;">
             <div class="extra-upload">
-              <h4 style="margin:0 0 6px 0">Uploading</h4>
+              <h3 style="margin:0 0 6px 0">Uploading</h3>
               <div class="extra-upload-buttons">
                 <button class="upload-fr">Upload FR</button>
                 <button class="upload-target">Upload Target</button>
@@ -175,7 +175,7 @@ doc.html(`
               <span style="margin: 0 0 1em 0"><small>Uploaded data will not be persistent</small></span>
             </div>
             <div class="extra-eq">
-              <h4 style="margin:0 0 6px 0">Parametric Equalizer</h4>
+              <h3 style="margin:0 0 6px 0">Parametric Equalizer</h3>
               <div class="select-eq-phone">
                 <select name="phone">
                     <option value="" selected>Choose EQ model</option>
@@ -209,7 +209,7 @@ doc.html(`
                 <span class="eqopts"><button class="disable-filters">Disable</button></span>
                 <span class="eqopts"><button class="save-filters">Save EQ</button></span>
               </div>
-              <h4 style="margin: 6px 0 3px 0" >AutoEQ</h4>
+              <h3 style="margin: 6px 0 3px 0" >AutoEQ</h3>
               <div class="settings-row" style="margin:0 0 2px 0">
                 <span name="title">Frequency Range</span>
                 <span><input name="autoeq-from" type="number" min="20" max="20000" step="1" value="20"></input></span>
@@ -229,7 +229,7 @@ doc.html(`
                 <button class="autoeq">AutoEQ</button>
                 <button class="readme">Readme</button>
               </div>
-              <h4 style="margin:0">EQ Demo</h4>
+              <h3 style="margin:0">EQ Demo</h3>
               <div class="eq-demo">
                 <select class="eq-track">
                     <option value="pink" selected>Pink Noise</option>
@@ -260,7 +260,7 @@ doc.html(`
                 <span name="current-freq">Freq: <span class="freq-text">20</span> Hz</span>
                 <input name="tone-generator-freq" type="range" min="0" max="1" step="0.0001" value="0" />
               </div>
-              <h4 style="margin:0 0 3px 0">Miscellaneous</h4>
+              <h3 style="margin:0 0 3px 0">Miscellaneous</h3>
               <div class="settings-row" name="tone-gen-range" style="margin-top:0; text-align:center">
                 <span name="balance-l">Left</span>
                 <span name="balance-title" style="width:50%">Channel Balance</span>
@@ -1277,7 +1277,8 @@ function updatePaths(trigger) {
         .attr("class", "target")
         .style("stroke-dasharray", "6, 3");
     let pfb = graphLines.filter(c=>c.p.isPrefBounds)
-        .style("stroke-dasharray", "6, 3");
+    .style("stroke-linecap", "round")
+    .style("stroke-dasharray", "0.1, 4");
 
     if (targetColorCustom) t.attr("stroke", targetColorCustom);
     let nodes = graphLines.nodes();

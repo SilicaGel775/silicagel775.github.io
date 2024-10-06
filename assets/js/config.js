@@ -37,7 +37,7 @@ const init_phones = ["Harman IE 2019v2 Target", "AFUL Cantor (Shallow Fit)"],// 
 // Specify which targets to display
 const targets = [
     { type:"Harman",     files:["Harman IE 2019v2","Harman IE 2017v2"] },
-    { type:"Neutral",    files:["KEMAR DF","IEF Neutral 2023","Etymotic"] },
+    { type:"Neutral",    files:["ISO 11904-1 DF","IEF Neutral 2023","KEMAR DF","Etymotic"] },
     { type:"Reviewer",   files:["Antdroid","Banbeucmas","HBB","Precogvision","Super Review 22","Timmy","VSG"] },
     { type:"Preference", files:["AutoEQ","Rtings","Sonarworks"] }
 ];
@@ -49,14 +49,14 @@ const  preference_bounds_name = "Preference Bounds RAW",  // Preference bounds n
        allowSquigDownload = false,                     // If true, allows download of measurement data
        PHONE_BOOK = "phone_book.json",                 // Path to phone book JSON file
        default_y_scale = "40db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
-       default_DF_name = "KEMAR DF",                   // Default RAW DF name
+       default_DF_name = "ISO 11904-1 DF",             // Default RAW DF name
        dfBaseline = true,                              // If true, DF is used as baseline when custom df tilt is on
-       default_bass_shelf = 8,                         // Default Custom DF bass shelf value
+       default_bass_shelf = 0,                         // Default Custom DF bass shelf value
        default_tilt = -0.8,                            // Default Custom DF tilt value
        default_ear = 0,                                // Default Custom DF ear gain value
        default_treble = 0,                             // Default Custom DF treble gain value
-       tiltableTargets = ["KEMAR DF"],                 // Targets that are allowed to be tilted
-       compTargets = ["KEMAR DF"],                     // Targets that are allowed to be used for compensation
+       tiltableTargets = ["ISO 11904-1 DF","IEF Neutral 2023","KEMAR DF"],                 // Targets that are allowed to be tilted
+       compTargets = ["ISO 11904-1 DF","IEF Neutral 2023","KEMAR DF"],                     // Targets that are allowed to be used for compensation
        allowCreatorSupport = false;                     // Allow the creator to have a button top right to support them
        allowLanguageSelector = true;                   // Allow the creator to have a button top right to support them
        availableLanguages = ["en", "ko"];              // List of available language codes
