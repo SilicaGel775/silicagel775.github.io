@@ -1,9 +1,27 @@
-# Demo Page
-https://graphtool-demo.harutohiroki.com/
+# ExtendedGraphTool
 
-# Changes
+This repo is a fork of [PublicGraphTool](https://github.com/mlochbaum/CrinGraph) with additional features and modifications.
+
+## Demo Page
+N/A yet, but you can see my personal DB [here](https://silicagel775.github.io/) atm.
+
+## Additional Features
+
+Each additional features are implemented in a separate branch. \
+You can checkout to each branch to see or implement those features.
+
+The 'custom' branch includes all additional features mentioned below.
+
+- Multi-language Support [(branch)](https://github.com/potatosalad775/ExtendedGraphTool/tree/feat/l10n)
+- Non-Confidence Interval Tutorial for IEC 60318-4 (711) [(branch)](https://github.com/potatosalad775/ExtendedGraphTool/tree/feat/Non-Confidence-Interval-Tutorial)
+
+---
+
+# PublicGraphTool by mlochbaum (HarutoHiroki)
+
+## Changes
 - Added Equalizer (cred to Rohsa)
-- Added Uploads
+- Added Upload
 - Added Targets
 - Added Website link on graph (cred to MRS)
 - Re-themed graph window
@@ -36,7 +54,7 @@ https://graphtool-demo.harutohiroki.com/
 - Added a Graph Customisation menu
 
 
-# TODO
+## TODO
 - Implement a way to measure the SPL of an IEM and decide whether to upload it or not, skipping REW
   - ability to select which mic/output to use
   - ability to select calibration files
@@ -44,5 +62,5 @@ https://graphtool-demo.harutohiroki.com/
 - Trace Arithmetic
 - Realtime Analysis
 
-# P.S.
+## P.S.
 - If you do implement code in here, do leave credits to the original author (me) and the contributors (Rohsa, MRS)
