@@ -58,6 +58,16 @@ const  preference_bounds_name = "Preference Bounds RAW", // Preference bounds na
        tiltableTargets = ["KEMAR DF"],                 // Targets that are allowed to be tilted
        compTargets = ["KEMAR DF"],                     // Targets that are allowed to be used for compensation
        allowCreatorSupport = false;                     // Allow the creator to have a button top right to support them
+       allowLanguageSelector = true;                   // Allow the creator to have a button top right to support them
+       availableLanguages = ["en", "ko"];              // List of available language codes. When you are adding a new language, make sure to use ISO 639-1 Language Codes for auto-detection.
+       defaultLanguage = (function() {
+            const browserLang = navigator.language.split('-')[0];
+            return availableLanguages.includes(browserLang) ? browserLang : "en";
+       })();                                           // Determine default language based on user's browser
+       translateHeader = true;                         // If true, translated header link from language files will be used over the one from config.js
+       translateTutorial = true;                       // If true, translated tutorial from language files will be used over the one from config.js
+       translateAccessories = true;                    // If true, translated accessories from language files will be used over the one from config.js
+       enableNonConfidenceIntervalTutorial = false;    // Enable Non-Confidence Interval (for IEC 60318-4 (711)) Tutorial. You can edit this as some kind of warning region
 
 
 
@@ -140,6 +150,7 @@ const
         </p>
     `,
     // Which of the above variables to actually insert into the page
+    // If you are using custom accessories, you may need to change loadTranslations() in translate.js to utilize custom accessories
     whichAccessoriesToUse = simpleAbout;
 
 
@@ -260,6 +271,9 @@ let headerLogoText = "SilicaGelGraphTool",
 //      url: "https://github.com/HarutoHiroki"
 //  },
 ];
+let whichHeaderLogoTextToUse = headerLogoText;
+let whichHeaderLogoImgUrlToUse = headerLogoImgUrl;
+let whichHeaderLinksToUse = headerLinks;
 
 // Source: https://www.teachmeaudio.com/mixing/techniques/audio-spectrum
 let tutorialDefinitions = [
@@ -297,5 +311,12 @@ let tutorialDefinitions = [
         name: 'Brilliance',
         width: '17.4%',
         description: 'The brilliance range is composed entirely of harmonics and is responsible for sparkle and air of a sound. Over boosting in this region can accentuate hiss and cause ear fatigue.'
+    },
+    {
+        name: "Non-Confidence Interval",
+        width: "12.8%",
+        description: "An interval where relative comparisons between measurements are not problematic, but unreliable due to the nature of IEC 60318-4 (711) measurement equipment. This is where the over-represented resonance peak of 711 begins.",
+        type: "NCI_warning"
     }
 ]
+let whichTutorialDefinitionsToUse = tutorialDefinitions;

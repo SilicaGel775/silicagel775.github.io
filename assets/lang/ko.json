@@ -1,6 +1,6 @@
 {
   "header": {
-    "logoText": "PotatoSaladGraphTool",
+    "logoText": "PotatosaladGraphTool",
     "links": [
       {
         "name": "블로그",
@@ -47,11 +47,11 @@
     },
     {
       "name": "비신뢰구간",
-      "description": "측정치 간의 상대비교에는 문제가 없으나, IEC 60318-4 (711) 측정 장비의 특성 상 신뢰할 수 없는 구간. 실제보다 과도하게 표현되는 711 특유의 공진 피크가 시작되는 구간이기도 하며, 삽입 깊이를 일정하게 통제하여 얻어낸 FR 측정치와 다르게, 실제 청음 환경에서는 이어폰의 삽입 깊이가 일정하지 않아 측정치와 다소 다른 소리가 느껴질 수 있는 주요 원인이 되는 대역이기도 함."
+      "description": "측정치 간의 상대비교에는 문제가 없으나, IEC 60318-4 (711) 측정 장비의 특성 상 신뢰할 수 없는 구간. 실제보다 과도하게 표현되는 711 특유의 공진 피크가 시작되는 구간이기도 함."
     }
   ],
   "accessories": {
-    "content": "<p class=\"center\">해당 측정치 데이터베이스는 감자사라다가 관리하고 있습니다. 모든 주파수 응답 측정치는 'IEC 60318-4'를 준수하는 이어시뮬레이터를 통해 이루어졌습니다. This web software is based on a <a href=\"https://github.com/HarutoHiroki/PublicGraphTool\">HarutoHiroki's modified version of CrinGraph</a>, which was <a href=\"https://github.com/mlochbaum/CrinGraph\">originally developed by Marshall Lochbaum</a></p>"
+    "content": "<p class=\"center\">해당 측정치 데이터베이스는 감자사라다가 관리하고 있습니다. 모든 주파수 응답 측정치는 'IEC 60318-4'를 준수하는 이어시뮬레이터를 통해 이루어졌습니다.<br>This web software is based on a <a href=\"https://github.com/HarutoHiroki/PublicGraphTool\">HarutoHiroki's modified version of CrinGraph</a>, which was <a href=\"https://github.com/mlochbaum/CrinGraph\">originally developed by Marshall Lochbaum</a></p>"
   },
   "watermarkText": {
     "content": "Potatosalad"
@@ -87,6 +87,7 @@
     "addHelp": "(또는 우클릭/Ctrl+클릭하여 선택하시거나, 다른 IEM을 고정하세요.)",
     "lock": "잠금",
     "selectModelAlert": "목록에서 기기를 선택하여 측정치를 불러오세요.",
+    "mobileHelper": "모든 그래프 보기",
     "uploading": "업로드",
     "uploadFR": "FR 업로드",
     "uploadTarget": "타겟 업로드",

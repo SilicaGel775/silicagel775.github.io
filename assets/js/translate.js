@@ -6,19 +6,21 @@ async function loadTranslations(lang) {
     const response = await fetch(`assets/lang/${lang}.json`);
     translations = await response.json();
 
-    if (prioritizeTranslatedHeader) {
-      if (translations.header) {
-        headerLogoText = translations.header.logoText || headerLogoText;
-        headerLinks = translations.header.links || headerLinks;
-      }
+    if(lang == "en") {
+      whichHeaderLogoTextToUse = headerLogoText;
+      whichHeaderLinksToUse = headerLinks;
+      whichTutorialDefinitionsToUse = tutorialDefinitions;
+      whichAccessoriesToUse = simpleAbout;
     }
-    if (prioritizeTranslatedTutorial) {
-      if (translations.tutorial) {
-        tutorialDefinitions = translations.tutorial || tutorialDefinitions;
+    else {
+      if (translateHeader) {
+        whichHeaderLogoTextToUse = translations.header.logoText || headerLogoText;
+        whichHeaderLinksToUse = translations.header.links || headerLinks;
       }
-    }
-    if (prioritizeTranslatedAccessories) {
-      if (translations.accessories) {
+      if (translateTutorial) {
+        whichTutorialDefinitionsToUse = translations.tutorial || tutorialDefinitions;
+      }
+      if (translateAccessories) {
         whichAccessoriesToUse = translations.accessories.content || simpleAbout;
       }
     }
@@ -33,15 +35,15 @@ function updatePageTranslations() {
   // Update the content of the page
   updateTranslations();
   // Update header content
-  if (prioritizeTranslatedHeader) {
+  if (translateHeader) {
     updateHeaderContent();
   }
   // Update tutorial content
-  if (prioritizeTranslatedTutorial) {
+  if (translateTutorial) {
     updateTutorialContent();
   }
   // Update accessories content
-  if (prioritizeTranslatedAccessories) {
+  if (translateAccessories) {
     updateAccessoriesContent();
   }
   // Update watermark text
@@ -131,13 +133,23 @@ function updateTranslations() {
 
   // Tbody Alert
   const alertText = t.selectModelAlert || "Select a model from the list below to graph its frequency response";
-  const style = document.createElement('style');
-  style.textContent = `
+  const alertTextStyle = document.createElement('style');
+  alertTextStyle.textContent = `
     tbody.curves:empty:before {
       content: '${alertText}';
     }
   `;
-  document.head.appendChild(style);
+  document.head.appendChild(alertTextStyle);
+
+  // Mobile Helper
+  const mobileHelperText = t.mobileHelper || "Browse all graphs";
+  const mobileHelperTextStyle = document.createElement('style');
+  mobileHelperTextStyle.textContent = `
+    tr.mobile-helper:before {
+      content: '${mobileHelperText}';
+    }
+  `;
+  document.head.appendChild(mobileHelperTextStyle);
 
   // Equalizer panel
   doc.select(".extra-panel h4").text(t.uploading || "Uploading");
@@ -229,46 +241,45 @@ function updateTranslations() {
 }
 
 function updateHeaderContent() {
-  const t = translations.header || {}; // Use empty object as fallback
+  const logoImgElement = document.querySelector(".logo a img");
+  if (logoImgElement) {
+    logoImgElement.src = whichHeaderLogoImgUrlToUse || headerLogoImgUrl;
+  }
 
   const logoTextElement = document.querySelector(".logo a span");
   if (logoTextElement) {
-    logoTextElement.textContent = t.logoText || headerLogoText;
+    logoTextElement.textContent = whichHeaderLogoTextToUse || headerLogoText;
   }
 
   const headerLinks = document.querySelectorAll(".header-links a");
   headerLinks.forEach((linkElement, i) => {
-    const link = t.links[i] || headerLinks[i];
+    const link = whichHeaderLinksToUse[i] || headerLinks[i];
     linkElement.textContent = link.name || headerLinks[i].name;
     linkElement.setAttribute("href", link.url || headerLinks[i].url);
   });
 }
 
 function updateTutorialContent() {
-  const t = translations.tutorial || []; // Use empty array as fallback
-
   const tutorialButtons = document.querySelectorAll(
     ".tutorial-buttons .button-segment"
   );
   tutorialButtons.forEach((button, i) => {
-    const tutorialData = t[i] || tutorialDefinitions[i];
-    button.textContent = tutorialData.name || tutorialDefinitions[i].name;
+    const tutorialData = whichTutorialDefinitionsToUse[i] || tutorialDefinitions[i];
+    button.textContent = tutorialData.name || "";
   });
 
   const tutorialDescriptions = document.querySelectorAll(
     ".tutorial-description .description-segment p"
   );
   tutorialDescriptions.forEach((description, i) => {
-    const tutorialData = t[i] || tutorialDefinitions[i];
+    const tutorialData = whichTutorialDefinitionsToUse[i] || tutorialDefinitions[i];
     description.textContent =
-      tutorialData.description || tutorialDefinitions[i].description;
+      tutorialData.description || "";
   });
 }
 
 function updateAccessoriesContent() {
-  const t = translations.accessories || {}; // Use empty object as fallback
-
-  doc.select(".accessories aside").html(t.content || simpleAbout);
+  doc.select(".accessories aside").html(whichAccessoriesToUse || paragraphs);
 }
 
 function updateWatermarkText() {
