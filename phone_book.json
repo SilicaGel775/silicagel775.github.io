@@ -151,7 +151,12 @@
     "phones": [
       {
         "name": "Airpods Pro 2",
-        "file": "Apple Airpods Pro 2"
+        "file": [
+          "Apple Airpods Pro 2 (Default Tip, v.5E135)",
+          "Apple Airpods Pro 2 (AZLA Crystal Tip, v.5E135)",
+          "Apple Airpods Pro 2 (AZLA MAX Tip, v.5E135)"
+        ],
+        "prefix": "Apple Airpods Pro 2"
       }
     ]
   },
