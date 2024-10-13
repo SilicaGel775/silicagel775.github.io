@@ -58,16 +58,15 @@ const  preference_bounds_name = "Preference Bounds RAW", // Preference bounds na
        tiltableTargets = ["KEMAR DF"],                 // Targets that are allowed to be tilted
        compTargets = ["KEMAR DF"],                     // Targets that are allowed to be used for compensation
        allowCreatorSupport = true;                     // Allow the creator to have a button top right to support them
-       allowLanguageSelector = true;                   // Allow the creator to have a button top right to support them
+       allowLanguageSelector = true;                   // Add Language Selector on the top right of the page
        availableLanguages = ["en", "ko"];              // List of available language codes. When you are adding a new language, make sure to use ISO 639-1 Language Codes for auto-detection.
-       defaultLanguage = (function() {
-            const browserLang = navigator.language.split('-')[0];
-            return availableLanguages.includes(browserLang) ? browserLang : "en";
-       })();                                           // Determine default language based on user's browser
+       defaultLanguage = "en";                         // Determine default (fallback) language. It should be included in the availableLanguages list.
+       useBrowserLangAsDefault = true;                 // If true, the browser's language will be used as the default language. If false, the defaultLanguage setting will be used as the default.
        translateHeader = true;                         // If true, translated header link from language files will be used over the one from config.js
        translateTutorial = true;                       // If true, translated tutorial from language files will be used over the one from config.js
        translateAccessories = true;                    // If true, translated accessories from language files will be used over the one from config.js
-       enableNonConfidenceIntervalTutorial = false;    // Enable Non-Confidence Interval (for IEC 60318-4 (711)) Tutorial. You can edit this as some kind of warning region
+       translateTargetTypes = true;                    // If true, translated target types from language files will be used over the one from config.js
+       translateAlertMessages = true;                  // If true, translated alert messages from language files will be used.
 
 
 
