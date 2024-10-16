@@ -86,6 +86,10 @@
           "AFUL MagicOne (White Tip)"
         ],
         "prefix": "AFUL MagicOne"
+      },
+      {
+        "name": "Performer 5+2",
+        "file": "AFUL Performer 5+2"
       }
     ]
   },
@@ -503,6 +507,14 @@
           "Kefine Delci (Wide Bore Tip)"
         ],
         "prefix": "Kefine Delci"
+      },
+      {
+        "name": "Klanar",
+        "file": [
+          "Kefine Klanar (Narrow Bore Tip)",
+          "Kefine Klanar (Wide Bore Tip)"
+        ],
+        "prefix": "Kefine Klanar"
       }
     ]
   },
@@ -796,6 +808,20 @@
         "name": "IER-Z1R",
         "file": ["Sony IER-Z1R (Divinus Velvet Tips)"],
         "prefix": "Sony IER-Z1R"
+      },
+      {
+        "name": "INZONE Buds (WF-G700N)",
+        "file": [
+          "Sony INZONE Buds (ANC On)",
+          "Sony INZONE Buds (ANC On, EQ Bass Boost)",
+          "Sony INZONE Buds (ANC On, EQ Music Video)",
+          "Sony INZONE Buds (ANC Off)",
+          "Sony INZONE Buds (ANC Off, EQ Bass Boost)",
+          "Sony INZONE Buds (ANC Off, EQ Music Video)",
+          "Sony INZONE Buds (ANC On, Output as Chat)",
+          "Sony INZONE Buds (ANC Off, Output as Chat)"
+        ],
+        "prefix": "Sony INZONE Buds"
       },
       {
         "name": "MDR EX800ST",
