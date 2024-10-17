@@ -216,6 +216,15 @@
     ]
   },
   {
+    "name": "CLAVELON",
+    "phones": [
+      {
+        "name": "Delta",
+        "file": "CLAVELON Delta"
+      }
+    ]
+  },
+  {
     "name": "CVJ",
     "phones": [
       {
